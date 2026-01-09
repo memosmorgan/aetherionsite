@@ -12,14 +12,15 @@ export function VideoSection() {
           Innovation Video
         </h2>
 
-        <div className="mx-auto max-w-5xl aspect-video bg-zinc-900 rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 flex items-center justify-center mb-8 relative group">
-           {/* Placeholder for Video Embed */}
-           <div className="absolute inset-0 flex items-center justify-center">
-             <div className="bg-white/10 backdrop-blur-md p-6 rounded-full group-hover:bg-white/20 transition-all duration-300 cursor-pointer ring-1 ring-white/20">
-               <Play className="h-16 w-16 text-white ml-2 fill-white" />
-             </div>
-           </div>
-           <p className="text-zinc-500 absolute bottom-8 font-medium">Video Embed Placeholder</p>
+        <div className="mx-auto max-w-5xl aspect-video bg-zinc-900 rounded-2xl overflow-hidden shadow-2xl border border-zinc-800 mb-8 relative group">
+           <iframe 
+             className="w-full h-full"
+             src="https://www.youtube.com/embed/UsxqXzwxDI4?rel=0" 
+             title="Aetherion Innovation Video" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerPolicy="strict-origin-when-cross-origin" 
+             allowFullScreen
+           ></iframe>
         </div>
 
         {/* Takeaways */}
@@ -44,7 +45,9 @@ export function VideoSection() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
            <Button asChild size="lg" className="bg-white text-black hover:bg-zinc-200 text-lg px-8 h-12">
-             <a href="#">Watch Innovation Video</a>
+             <a href="https://youtu.be/UsxqXzwxDI4" target="_blank" rel="noopener noreferrer">
+               Watch on YouTube
+             </a>
            </Button>
            <Button asChild variant="outline" size="lg" className="border-zinc-700 text-zinc-300 hover:bg-zinc-900 hover:text-white h-12">
              <Link href="#evidence">
